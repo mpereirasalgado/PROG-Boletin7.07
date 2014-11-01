@@ -9,24 +9,40 @@ public class Boletin707 {
         double lado;
         double base, altura;
         double radio;
-
+        int opcion;
         
-        //opcion duadrado
-        Cuadrado obx1 = new Cuadrado();
-        lado = obx1.setLado();
-        obx1.calcularArea(lado);
+        String respuesta = JOptionPane.showInputDialog("Selecione el tipo de area a calcular: \n1 Cuadrado \n2 Triangulo \n3 Circulo");
+        opcion = Integer.parseInt(respuesta);
         
-        //Opcion triangulo
-        Triangulo obx2 = new Triangulo();
-        base = obx2.setBase();
-        altura = obx2.setAltura();
-        obx2.calcularArea(base, altura);
-        
-        //opcion circulo
-        Circulo obx3 = new Circulo();
-        radio = obx3.setRadio();
-        obx3.calcularArea(radio);
-        
+        switch (opcion){
+            
+            case 1:
+                Cuadrado obx1 = new Cuadrado();
+                lado = obx1.setLado();
+                obx1.calcularArea(lado);
+                
+                break;
+                
+                
+            case 2:
+                Triangulo obx2 = new Triangulo();
+                base = obx2.setBase();
+                altura = obx2.setAltura();
+                obx2.calcularArea(base, altura);
+                
+                break;
+             
+                
+            case 3:
+                Circulo obx3 = new Circulo();
+                radio = obx3.setRadio();
+                obx3.calcularArea(radio);  
+                
+                break;
+                
+            default:
+                JOptionPane.showMessageDialog(null, "La opcion es incorrecta");
+        }
     }
 }
 //Created by Seijas
