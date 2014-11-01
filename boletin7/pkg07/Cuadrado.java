@@ -14,6 +14,13 @@ public class Cuadrado {
         this.lado = lado;
     }
     
+    //introducion datos
+    public double setLado(){
+        String resposta = JOptionPane.showInputDialog(null, "Introduce el lado del cuadrado a calcular");
+        double valor = Double.valueOf(resposta);
+        return valor;
+    }
+    
     //calcular area
     public void calcularArea(double lado){
         JOptionPane.showMessageDialog(null, "El area del cuadrado de lado " + lado + " es de " + (Math.pow(lado, 2)) + "m^2");
