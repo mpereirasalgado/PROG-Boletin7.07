@@ -6,13 +6,10 @@ import javax.swing.JOptionPane;
 public class Boletin707 {
 
     public static void main(String[] args) {
-        double lado;
-        double base, altura;
-        double radio;
-        int opcion;
+        double lado, base, altura, radio;
         
         String respuesta = JOptionPane.showInputDialog("Selecione el tipo de area a calcular: \n1 Cuadrado \n2 Triangulo \n3 Circulo");
-        opcion = Integer.parseInt(respuesta);
+        int opcion = Integer.parseInt(respuesta);
         
         switch (opcion){
             
@@ -20,7 +17,6 @@ public class Boletin707 {
                 Cuadrado obx1 = new Cuadrado();
                 lado = obx1.setLado();
                 obx1.calcularArea(lado);
-                
                 break;
                 
                 
@@ -29,7 +25,6 @@ public class Boletin707 {
                 base = obx2.setBase();
                 altura = obx2.setAltura();
                 obx2.calcularArea(base, altura);
-                
                 break;
              
                 
@@ -37,7 +32,6 @@ public class Boletin707 {
                 Circulo obx3 = new Circulo();
                 radio = obx3.setRadio();
                 obx3.calcularArea(radio);  
-                
                 break;
                 
             default:
