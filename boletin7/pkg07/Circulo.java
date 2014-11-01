@@ -15,6 +15,13 @@ public class Circulo {
         this.radio = radio;
     }
     
+    //introducion datos
+    public double setRadio(){
+        String resposta = JOptionPane.showInputDialog(null, "Introduce el radio del circulo a calcular");
+        double valor = Double.valueOf(resposta);
+        return valor;
+    }
+    
     //calcular area
     public void calcularArea(double radio){
         JOptionPane.showMessageDialog(null, "El area del circulo de radio " + radio + " son " + (PI*radio) + "m^2");
