@@ -9,7 +9,7 @@ public class Boletin707 {
         double lado, base, altura, radio;
         
         String respuesta = JOptionPane.showInputDialog("Selecione el tipo de area a calcular: \n1 Cuadrado \n2 Triangulo \n3 Circulo");
-        int opcion = Integer.parseInt(respuesta);
+        byte opcion = Byte.valueOf(respuesta);
         
         switch (opcion){
             
@@ -19,14 +19,12 @@ public class Boletin707 {
                 obx1.calcularArea(lado);
                 break;
                 
-                
             case 2:
                 Triangulo obx2 = new Triangulo();
                 base = obx2.setBase();
                 altura = obx2.setAltura();
                 obx2.calcularArea(base, altura);
                 break;
-             
                 
             case 3:
                 Circulo obx3 = new Circulo();
