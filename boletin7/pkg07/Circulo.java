@@ -24,7 +24,7 @@ public class Circulo {
     
     //calcular area
     public void calcularArea(double radio){
-        JOptionPane.showMessageDialog(null, "El area del circulo de radio " + radio + " son " + (PI*radio) + "m^2");
+        JOptionPane.showMessageDialog(null, "El area del circulo de radio " + radio + " son " + (PI*radio*radio) + "m^2");
     }
 }
 //Created by the best programer (Seijas)
