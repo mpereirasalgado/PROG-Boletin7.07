@@ -4,7 +4,7 @@ package boletin7.pkg07;
 import javax.swing.JOptionPane;
 
 public class Circulo {
-    double PI = 3.14159;
+    final double PI = 3.14159;
     double radio;
     
     //Constructores
